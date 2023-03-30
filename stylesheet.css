@@ -1,0 +1,192 @@
+/*幅指定に対して崩れず画面に収まるよう調整*/
+*{
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+/*webページの余白をなくす*/
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, p, div, a {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/*ヘッダーに対するCSS*/
+header {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(10, 10, 10, 1.0), rgba(182, 182, 182, 0));
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    z-index: 1;
+}
+
+.header_logo {
+    float: left;
+    height: 50px;
+    width: px;
+    padding-left: 40px;
+    padding-top: 11px;
+    font-size: 2.5vw;
+    line-height: auto;
+}
+
+.header_logo_sp {
+    color: orange;
+    font-size: 2.7vw;
+}
+
+.header_menu {
+    float: right;
+    margin-top: 17px;
+    margin-right: 10px;
+    line-height: auto;
+}
+
+.menu {
+    margin-right: 50px;
+    color: white;
+    font-size: 2vw;
+}
+
+.menu:hover {
+    text-shadow: 0px 0px 25px white;
+    font-size: 2.2vw;
+    margin-right: 45px;
+    transition: 0.2s;
+}
+
+/*トップコンテンツに対するCSS*/
+.contents_top {
+    width: auto;
+    height: auto;
+    position: relative;
+    border-bottom:3px solid rgb(100, 75, 223);
+}
+
+.contents_top video {
+    border-bottom:3px solid rgb(100, 75, 223);
+}
+
+.Ch_introduction {
+    position: absolute;
+    top: 70%;
+    right: 3%;
+    color: white;
+    font-size: 1.7vw;
+    line-height: auto;
+}
+
+.Ch_name {
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+}
+
+.contents_top video{
+    width: 100%;
+}
+
+/* オールコンテンツに対するCSS */
+.contents_all {
+    background-image: url("./スクリーンショット\ 2023-03-30\ 183022.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(195, 205, 253, 0.8);
+    background-blend-mode:lighten;
+}
+
+/* プレコンテンツに対するCSS */
+.contents_pre {
+    width: 100%;
+    padding: 100px 0px 50px 0px;
+    text-align: center;
+}
+
+.contents_pre h2 {
+    font-size: 4vw;
+    padding-bottom: 20px;
+    color: rgb(0, 0, 255);
+    font-weight: bold;
+}
+
+/*センターコンテンツに対するCSS*/
+.contents_center {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.clear {
+    clear: both;
+}
+
+.attack_wrapper {
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 5% 0px 1% 0px;
+    margin: 0px 1.5%;
+    font-size: 1.5vw;
+}
+
+.attack_wrapper h2 {
+    padding-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.attack_wrapper p{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    /* color: rgb(0, 0, 255); */
+}
+
+/*ボトムコンテンツに対するCSS*/
+.contents_bottom {
+    background-color:rgba(41, 59, 99, 0.938);
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.contents_bottom h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.contents_bottom_sns {
+    width: 20%;
+    min-width: 300px;
+    margin: auto;
+    display: flex;
+}
+
+.sns {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2vw;
+    color: white;
+    opacity: 0.7;
+}
+
+.fa {
+    font-size: 30px;
+    color: white;
+}
+
+.sns:hover {
+    opacity: 1;
+    font-weight: bold;
+    text-shadow: 0px 0px 25px white;
+    transition: 0.2s;
+}
