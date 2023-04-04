@@ -26,34 +26,35 @@ header {
     font-weight: bold;
     position: fixed;
     z-index: 1;
+    display: flex;
+    min-width: 700px;
+    /* background-color: aquamarine; */
 }
 
 .header_logo {
-    float: left;
     height: 50px;
-    width: px;
     padding-left: 40px;
     padding-top: 11px;
     font-size: 2.5vw;
-    line-height: auto;
+    /* background-color: rgba(207, 101, 15, 0.4); */
 }
 
 .header_logo_sp {
     color: orange;
-    font-size: 2.7vw;
+    font-size: 2.5vw;
 }
 
 .header_menu {
-    float: right;
     margin-top: 17px;
     margin-right: 10px;
     line-height: auto;
+    margin-left: auto;
+    font-size: 1.9vw;
 }
 
 .menu {
     margin-right: 50px;
     color: white;
-    font-size: 2vw;
 }
 
 .menu:hover {
@@ -61,6 +62,12 @@ header {
     font-size: 2.2vw;
     margin-right: 45px;
     transition: 0.2s;
+}
+
+.fa-bars{
+    /* background-color: rgba(100, 220, 200, 0.4); */
+    font-size: 20px;
+    display: none;
 }
 
 /*トップコンテンツに対するCSS*/
@@ -109,6 +116,12 @@ header {
     text-align: center;
 }
 
+.contents_pre iframe {
+    max-width: 80%;
+    min-width: 20vw;
+    max-height: 50vw;
+}
+
 .contents_pre h2 {
     font-size: 4vw;
     padding-bottom: 20px;
@@ -122,20 +135,21 @@ header {
     height: auto;
     margin: auto;
     padding-bottom: 100px;
-}
-
-.clear {
-    clear: both;
+    display: flex;
 }
 
 .attack_wrapper {
-    float: left;
-    width: 30%;
+    width: 100%;
     text-align: center;
-    padding: 5% 0px 1% 0px;
-    margin: 0px 1.5%;
+    margin: 0px 1%;
     font-size: 1.5vw;
 }
+
+.attack_wrapper img{
+    max-width: 25vw;
+    min-width: 100px;
+}
+
 
 .attack_wrapper h2 {
     padding-bottom: 10px;
@@ -143,12 +157,10 @@ header {
 }
 
 .attack_wrapper p{
-    width: 80%;
+    width: 90%;
     margin: auto;
-    text-align: left;
     color: black;
     font-weight: bold;
-    /* color: rgb(0, 0, 255); */
 }
 
 /*ボトムコンテンツに対するCSS*/
@@ -174,13 +186,13 @@ header {
     display: block;
     margin: auto;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 0.8vw;
     color: white;
     opacity: 0.7;
 }
 
-.fa {
-    font-size: 30px;
+.fa_bt {
+    font-size: 20px;
     color: white;
 }
 

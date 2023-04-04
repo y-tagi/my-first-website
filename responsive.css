@@ -1,0 +1,9 @@
+@media all and (max-width: 699px){
+    .header_menu{
+        display: none;
+    }
+
+    .fa-bars{
+        display: block;
+    }
+}
